@@ -84,6 +84,7 @@ DATABASES = {
         'PORT': '',
         'OPTIONS': {
             'read_default_file': '/etc/mysql/my.cnf',
+            'init_command': "SET sql_mode='STRICT_TRANS_TABLES'",
         },
     }
 }
